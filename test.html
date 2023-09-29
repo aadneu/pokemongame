@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+let app = document.getElementById("app");
+let picturegame = document.getElementById('picturegame')
+
+viewApp();
+function viewApp() {
+  app.innerHTML = /*html*/ `
+        <div id='picturegame'></div>
+         <div id='showpokedex'>sssddd</div>
+         <div id='textdiv'>sss</div>      
+         <button onclick='firstPage()'>Tilbake</button>
+        `; 
+    firstPage();
+}
+
+function firstPage(){
+ picturegame.innerHTML = `
+          <div>Lets go on an adventure, click the Ash and Picachu picture:</div>
+          <div onclick='start()' ><img src="img/ash.jpg" alt=""></div>
+          `;
+ }
+});
+    </script>
+</body>
+</html>
